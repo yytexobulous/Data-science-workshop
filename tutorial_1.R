@@ -54,6 +54,7 @@ raw_data %>%
 
 # i. Select Age and Sex columns only 
 
+
 # ii. Select all data apart from the Survived column
 
 # iii. Select the first three variables using numeric 
@@ -80,6 +81,12 @@ raw_data %>%
 # i. Arrange the dataframe from low to high 
 
 # ii. Arrange Fare data from high to low
+
+filtered_data_3<-raw_data %>%
+  dplyr::filter(Age >50 )
+
+filtered_data_1 <-raw_data %>%
+  dplyr::filter(Survived==0)
 
 # Make new variablea (mutate)
 
